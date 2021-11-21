@@ -7,13 +7,6 @@ request.onupgradeneeded = function(event) {
   db.createObjectStore("pending", { autoIncrement: true });
 };
 
-request.onsuccess = function(event) {
-  db = event.target.result;
-
-  if (navigator.onLine) {
-    checkDB();
-  }
-};
 
 //if there's an error, show what it is
 request.onerror = function(event) {
@@ -36,7 +29,7 @@ function checkDB() {
   getAll.onsuccess = function() {
     console.log(getAll.result)
     if (getAll.result.length > 0) {
-        console.log(getAll.result)
+        
       fetch("/api/transaction/bulk", {
         method: "POST",
         body: JSON.stringify(getAll.result),
