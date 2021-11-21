@@ -1,0 +1,69 @@
+
+  
+  body {
+    font-size: 16px;
+    font-family: Arial;
+    background-color: #F7FAFC;
+  }
+  
+  button,
+  input {
+    font-size: 1em;
+    font-family: Arial;
+  }
+  
+  label {
+    font-weight: 900;
+  }
+  
+  input {
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: .4em .8em;
+    background-color: #6686b0;
+  }
+  
+  input:focus {
+    background-color: #b02626;
+    border: 2px solid #2874c6;
+    outline: 0;
+  }
+
+  
+  button:active {
+    box-shadow: none;
+    transform: translateY(3px);
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  
+  
+  .wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .total {
+    font-size: 150%;
+  }
+  
+  form {
+    margin-top: 25px;
+  }
+  
+  .transactions {
+    text-align: left;
+    max-height: 300px;
+    overflow: auto;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .transaction-buttons {
+    margin-top: 25px;
+  }
+  
